@@ -17,6 +17,11 @@
   font-size: 1.75vw;
   line-height: 4vw;
 }
+.list-sub-text{
+  font-size: 1.75vw;
+  line-height: 4vw;
+  margin-left: 2vw;
+}
 #Quiz-Page{
   display: none;
 }
