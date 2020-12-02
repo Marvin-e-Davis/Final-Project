@@ -10,9 +10,10 @@
 }
 .sub-header{
   margin-top: 2vw;
+  margin-bottom: 1.5vw;
 }
 p{
-  line-height: 2vw;
+  line-height: 4vw;
 }
 #Quiz-Page{
   display: none;
