@@ -9,11 +9,12 @@
   padding: 1.5vw;
 }
 .sub-header{
+  font-size: 2vw;
   margin-top: 2vw;
   margin-bottom: 1.5vw;
 }
 p{
-  font-size: 2vw;
+  font-size: 1.75vw;
   line-height: 4vw;
 }
 #Quiz-Page{
