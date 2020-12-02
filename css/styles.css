@@ -1,4 +1,7 @@
 /* css */
+.container-fluid{
+  background-color: gray;
+}
 .main-title{
   color: white;
   background-color: black;
