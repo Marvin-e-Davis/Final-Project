@@ -13,6 +13,17 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
 
+  <script>
+    $(document).ready(function() {
+      $(".btn1").click(function() {
+        $("p").hide();
+      });
+      $(".btn2").click(function() {
+        $("p").show();
+      });
+    });
+  </script>
+
 </head>
 
 <body class='main-background'>
@@ -56,14 +67,6 @@
       <input class='button' type='submit' id='submit-quiz' value="GO TO QUIZ">
     </div>
 
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-
-    <script>
-      $("button").click(function() {
-        $("p").hide();
-      });
-    </script>
-
     <div id='Quiz-Page'>
       <p>Do you make accounts for random websites and give away personal information?</p>
       <input type="radio" id="q1" name="question1" value="Yes">
@@ -95,7 +98,6 @@
       <input type="radio" id="q10" name="question5" value="No">
       <label for="q10">No</label><br>
     </div>
-
 
   </div>
 
