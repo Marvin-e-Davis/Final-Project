@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/styles.css" type="text/css">
 
 </head>
+
 <body class='main-background'>
   <h1 class='main-title'>The Dark Patterns Quiz</h1>
   <div class='container'>
@@ -52,7 +53,7 @@
         After taking the quiz you will recieve feedback that can, if implemented,
         improve your experience on the internet and avoid harmful Dark Patterns.</p>
 
-      <input class='quiz-button' type='submit' id='submit-quiz' value="GO TO QUIZ">
+      <input class='button' type='submit' id='submit-quiz' value="GO TO QUIZ">
     </div>
 
     <div id='Quiz-Page'>
@@ -90,7 +91,9 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
     <script>
-      $('.Home-Page').hide()
+      $("button").click(function() {
+        $("p").hide();
+      });
     </script>
 
 
