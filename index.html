@@ -56,6 +56,14 @@
       <input class='button' type='submit' id='submit-quiz' value="GO TO QUIZ">
     </div>
 
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <script>
+      $("button").click(function() {
+        $("p").hide();
+      });
+    </script>
+
     <div id='Quiz-Page'>
       <p>Do you make accounts for random websites and give away personal information?</p>
       <input type="radio" id="q1" name="question1" value="Yes">
@@ -87,14 +95,6 @@
       <input type="radio" id="q10" name="question5" value="No">
       <label for="q10">No</label><br>
     </div>
-
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-
-    <script>
-      $("button").click(function() {
-        $("p").hide();
-      });
-    </script>
 
 
   </div>
