@@ -132,7 +132,7 @@
   </script>
 
   <script>
-  //switches from first to second page
+    //switches from first to second page
     $(document).ready(function() {
       $(".quiz-button").click(function() {
         $("#Home-Page").hide();
@@ -142,7 +142,7 @@
   </script>
 
   <script>
-  //switches from second to third page
+    //switches from second to third page
     $(".result-button").click(function() {
       $("#Quiz-Page").hide();
       $('#Results-Page').show();
@@ -150,7 +150,13 @@
   </script>
 
   <script>
-
+    function displayResults() {
+      var answer = document.getElementsByName('question1');
+      for (i = 0; i < answer.length; i++) {
+        if (answer[i].checked)
+          document.getElementById("Results-Page").innerHTML = "Answer: " + answer[i].value;
+      }
+    }
   </script>
 
 
