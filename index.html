@@ -150,15 +150,12 @@
   </script>
 
   <script type='text/javascript'>
-    var x;
-    x = document.querySelector('#q1-yes').value
-    if (x === 'Yes'){
-      console.log('it works')
-      $('#Results.Page').html('yay');
-    }
+    var answer
+    answer = $('input[name=question1]:checked','#quiz-form').val();
+    console.log(answer);
+    document.querySelector('#answer').textContent = 'yay';
   </script>
-
-
+      
 </body>
 
 </html>
