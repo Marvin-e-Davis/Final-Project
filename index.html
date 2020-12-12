@@ -154,6 +154,7 @@
       var answer = document.getElementsByName('question1');
       for (i = 0; i < answer.length; i++) {
         if (answer[i].checked)
+          console.log(100)
           document.getElementById("Results-Page").innerHTML = "Answer: " + answer[i].value;
       }
     }
