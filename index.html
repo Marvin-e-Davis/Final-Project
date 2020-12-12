@@ -19,6 +19,7 @@
   <h1 class='main-title'>The Dark Patterns Quiz</h1>
   <div class='container'>
 
+    <!-- First page - home page -->
     <div id='Home-Page'>
       <h3 class='sub-header'>What are Dark Patterns?</h3>
       <p class='sub-text'>Dark Patterns are aspects of websites and applications
@@ -53,9 +54,10 @@
         After taking the quiz you will recieve feedback that can, if implemented,
         improve your experience on the internet and avoid harmful Dark Patterns.</p>
 
-      <input class='button' type='submit' id='submit-quiz' value="GO TO QUIZ">
+      <input class='quiz-button' type='submit' id='submit-quiz' value="GO TO QUIZ">
     </div>
 
+    <!-- Second page - quiz page -->
     <div id='Quiz-Page'>
       <ol>
         <li>
@@ -98,6 +100,12 @@
         <input type="radio" id="q10" name="question5" value="No">
         <label for="q10">No</label><br>
       </ol>
+
+      <input class='result-button' type='submit' id='submit-results' value="GO TO RESULTS">
+    </div>
+
+    <div>
+      <h1>Results</h1>
     </div>
   </div>
 
@@ -111,9 +119,16 @@
 
   <script>
     $(document).ready(function() {
-      $(".button").click(function() {
+      $(".quiz-button").click(function() {
         $("#Home-Page").hide();
         $('#Quiz-Page').show();
+      });
+    });
+
+    $(document).ready(function() {
+      $(".result-button").click(function() {
+        $("#Quiz-Page").hide();
+        $('#Result-Page').show();
       });
     });
   </script>
