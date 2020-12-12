@@ -67,10 +67,12 @@
           <li>
             <p>Do you make accounts for random websites and give away personal information?</p>
           </li>
-          <input type="radio" id="q1-yes" name="question1" value="Yes">
-          <label for="q1-yes">Yes</label><br>
-          <input type="radio" id="q1-no" name="question1" value="No">
-          <label for="q1-no">No</label><br>
+          <div class=q1>
+            <input type="radio" id="q1-yes" name="question1" value="Yes">
+            <label for="q1-yes">Yes</label><br>
+            <input type="radio" id="q1-no" name="question1" value="No">
+            <label for="q1-no">No</label><br>
+          </div>
 
           <li>
             <p>Do you click on advertisements that promise free benefits with a download?</p>
@@ -149,7 +151,10 @@
   </script>
 
   <script>
-    //Shows results
+    //Access data and shows results
+    var answer
+    answer = $(".q1").val()
+    console.log(answer)
   </script>
 
 </body>
