@@ -54,7 +54,7 @@
         After taking the quiz you will recieve feedback that can, if implemented,
         improve your experience on the internet and avoid harmful Dark Patterns.</p>
 
-      <input class='quiz-button' type='submit' id='submit-quiz' value="GO TO QUIZ">
+      <button class='quiz-button' type='button'>GO TO QUIZ</button>
     </div>
 
     <!-- Second page - quiz page -->
@@ -132,11 +132,21 @@
   </script>
 
   <script>
-      $(".result-button").click(function() {
-        $("#Quiz-Page").hide();
-        $('#Results-Page').show();
-      });
+    $(".result-button").click(function() {
+      $("#Quiz-Page").hide();
+      $('#Results-Page').show();
+    });
   </script>
+
+
+  <script>
+    $('#result-button').on('click',function(){
+      output2 = $('input[name=kids]:checked','#myForm').val();
+      document.querySelector(
+        '#output2').textContent = "You " + output2 + " have kids.";
+    });
+  </script>
+
 
 
 
