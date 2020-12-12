@@ -149,10 +149,9 @@
 
 
   <script>
-    $('#result-button').on('click', function() {
-      output2 = $('input[name=kids]:checked', '#myForm').val();
-      document.querySelector(
-        '#output2').textContent = "You " + output2 + " have kids.";
+    $('#result-button').on('click',function(){
+      result1 = $('input[name=question1]:checked', '#quiz-form').val();
+      console.log(result1)
     });
   </script>
 
