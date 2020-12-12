@@ -144,20 +144,54 @@
   </script>
 
   <script>
-    var q1Answer = "No";
+    var q1BadAnswer = "No";
+    var q2BadAnswer = 'No';
+    var q3BadAnswer = 'No';
+    var q4BadAnswer = 'No';
+    var q5BadAnswer = 'No';
+
     //switches from second to third page
     $(".results-button").click(function() {
       $("#Quiz-Page").hide();
       $('#Results-Page').show();
       console.log("checking answers...");
-      // get the value of the selected radio button
-      var selectedOption = $('input[name="question1"]:checked').val();
-      console.log(selectedOption);
-      // if correct
-      if (selectedOption == q1Answer) {
+
+      //gets values of all questions
+      var answer1 = $('input[name="question1"]:checked').val();
+      var answer2 = $('input[name="question2"]:checked').val();
+      var answer3 = $('input[name="question3"]:checked').val();
+      var answer4 = $('input[name="question4"]:checked').val();
+      var answer5 = $('input[name="question5"]:checked').val();
+
+
+      console.log(answer1);
+      console.log(answer2);
+      console.log(answer3);
+      console.log(answer4);
+      console.log(answer5);
+
+      // if incorrect
+      if (answer1 == q1BadAnswer) {
         // update result
         $("#results-feedback").html("You are dumb!");
       }
+      if (answer2 == q2BadAnswer) {
+        // update result
+        $("#results-feedback").html("You are dumb!");
+      }
+      if (answer3 == q3BadAnswer) {
+        // update result
+        $("#results-feedback").html("You are dumb!");
+      }
+      if (answer4 == q4BadAnswer) {
+        // update result
+        $("#results-feedback").html("You are dumb!");
+      }
+      if (answer5 == q5BadAnswer) {
+        // update result
+        $("#results-feedback").html("You are dumb!");
+      }
+
       $("quiz-form").submit(function(e) {
         e.preventDefault();
       });
