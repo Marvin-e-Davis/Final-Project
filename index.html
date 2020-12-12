@@ -152,6 +152,7 @@
     $('#result-button').on('click',function(){
       result1 = $('input[name=question1]:checked', '#quiz-form').val();
       console.log(result1);
+      document.querySelector('#output2').textContent = "You " + output2 + " have kids.";
     });
   </script>
 
