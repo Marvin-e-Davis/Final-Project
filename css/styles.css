@@ -31,6 +31,9 @@
 .indent{
   margin-left: 2vw;
 }
+.questions{
+  font-size: 1.75vw;
+}
 #Quiz-Page{
   display: none;
 }
