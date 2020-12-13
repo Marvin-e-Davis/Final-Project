@@ -354,7 +354,7 @@
     var score = 6
 
     //makes user click all questions
-    while (
+    if (
       ($('input[name="question1"]:checked').val() != undefined &&
         $('input[name="question2"]:checked').val() != undefined)
 
@@ -365,8 +365,8 @@
       &&
       ($('input[name="question5"]:checked').val() != undefined &&
         $('input[name="question6"]:checked').val() != undefined)) {
-          console.log(1)
-        }
+          console.log(1);
+        }else{
 
       //switches from second to third page
       $(".results-button").click(function() {
@@ -477,6 +477,7 @@
           e.preventDefault();
         });
       });
+    };
   </script>
 
 
