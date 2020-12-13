@@ -271,12 +271,12 @@
     font-size: 4vw;
   }
   .sub-header{
-    font-size: 2.25vw;
+    font-size: 3vw;
     margin-top: 4vw;
     margin-bottom: 1.5vw;
   }
   .sub-text{
-    font-size: 1.75vw;
+    font-size: 2.75vw;
     line-height: 4vw;
   }
 }
