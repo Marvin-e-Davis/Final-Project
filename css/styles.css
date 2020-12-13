@@ -34,7 +34,7 @@
 .questions{
   font-size: 1.75vw;
   margin-bottom: 1vw;
-  font-weight: bold;
+  font-weight: 500;
 }
 .radio-container{
   display: block;
