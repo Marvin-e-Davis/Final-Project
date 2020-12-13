@@ -182,11 +182,22 @@
         <p>Privacy Zuckering</p>
         <p class='indent'>This Dark Pattern, labeled after CEO of Facebook
           Mark Zuckerberg, is described by it's observation of corporation's and
-          companies' potential desire to acquire user's private information.</p>
+          companies' potential desire to acquire user's private information. In order
+          to avoid this imagine that the internet is a stranger; if you wouldn't
+          tell a stranger the information don't tell the internet.</p>
       </div>
 
-      <p id='results-feedback2'></p>
-      <p id='results-feedback3'></p>
+      <div id='results-feedback2'>
+        <p>Disguised Ads</p>
+        <p class='indent'>Designed to trick users, this Dark Pattern masquerades
+        as content, but in reality are advertisements that may also lead to suspicious
+        downloads. To avoid this try being cautious of what you click on and avoid
+        unknown links.</p>
+      </div>
+
+      <div id='results-feedback3'>
+        <p>Sneak Into Basket</p>
+      </div>
       <p id='results-feedback4'></p>
       <p id='results-feedback5'></p>
       <p id='results-feedback6'></p>
@@ -269,7 +280,7 @@
       }
       if (answer2 == q2BadAnswer) {
         // update result
-        $("#results-feedback2").html("Disguised Ads");
+        $("#results-feedback2").show();
         console.log(2)
       }
       if (answer3 == q3BadAnswer) {
