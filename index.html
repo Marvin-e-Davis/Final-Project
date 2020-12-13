@@ -189,9 +189,15 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
   <script>
+    //Starts page at top
+    window.onbeforeunload = function() {
+      window.scrollTo(0, 0);
+    }
+  </script>
+
+  <script>
     //switches from first to second page
     $(document).ready(function() {
-      $(this).scrollTop(0);
       $(".quiz-button").click(function() {
         $("#Home-Page").hide();
         $('#Quiz-Page').show();
@@ -204,12 +210,12 @@
     const quizButton = document.querySelector('.quiz-button')
     const resultsButton = document.querySelector('.results-button')
 
-    quizButton.addEventListener('click', function(){
-      window.scrollTo(0,0);
+    quizButton.addEventListener('click', function() {
+      window.scrollTo(0, 0);
     });
 
-    resultsButton.addEventListener('click', function(){
-      window.scrollTo(0,0);
+    resultsButton.addEventListener('click', function() {
+      window.scrollTo(0, 0);
     });
   </script>
 
