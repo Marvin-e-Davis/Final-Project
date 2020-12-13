@@ -356,7 +356,7 @@
     //makes user click all questions
     $('.results-button').click(function(){
       if (
-        $('input[name="question1"]:checked').val() === undefined){
+        $('input[name="question1"]:checked').val() == undefined){
         alert('Please answer all questions before attempting to move on.');
       } else if{
         $('input[name="question2"]:checked').val() === undefined){
