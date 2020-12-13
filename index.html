@@ -296,7 +296,9 @@
       </div>
 
       <div class='third-button'>
-        <button class='home-button' type='button'>GO BACK HOME</button>
+        <button class='home-button'
+        onClick="window.location.reload();"
+        type='button'>GO BACK HOME</button>
       </div>
 
     </div>
@@ -464,13 +466,6 @@
     });
   </script>
 
-  <script>
-    $('.home-button').click(function(){
-      $('#Results-Page').hide();
-      $('#Home-Page').show();
-      $('#end-title').hide()
-    })
-  </script>
 
 </body>
 
