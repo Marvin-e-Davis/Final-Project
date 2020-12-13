@@ -170,12 +170,12 @@
     <!-- Third page - Results page -->
     <div id='Results-Page'>
       <h1>Your Results Are In<h1>
-      <p id='results-feedback1'></p>
-      <p id='results-feedback2'></p>
-      <p id='results-feedback3'></p>
-      <p id='results-feedback4'></p>
-      <p id='results-feedback5'></p>
-      <p id='results-feedback6'></p>
+          <p id='results-feedback1'></p>
+          <p id='results-feedback2'></p>
+          <p id='results-feedback3'></p>
+          <p id='results-feedback4'></p>
+          <p id='results-feedback5'></p>
+          <p id='results-feedback6'></p>
     </div>
 
   </div>
@@ -199,6 +199,21 @@
   </script>
 
   <script>
+    //Has buttons scroll to top when clicked
+    const quizButton = document.querySelector('.quiz-button')
+    const resultsButton = document.querySelector('.results-button')
+
+    quizButton.addEventListener('click', function(){
+      window.scrollTo(0,0);
+    });
+
+    resultsButton.addEventListener('click', function(){
+      window.scrollTo(0,0);
+    });
+  </script>
+
+  <script>
+    //shows results
     var q1BadAnswer = "Yes";
     var q2BadAnswer = 'Yes';
     var q3BadAnswer = 'Yes';
