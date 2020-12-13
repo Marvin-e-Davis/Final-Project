@@ -37,8 +37,8 @@
 .radio-container{
   display: block;
   position: relative;
-  padding-left: 2vw;
-  margin-bottom: 2vw;
+  padding-left: 4vw;
+  margin-bottom: 4vw;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
