@@ -178,12 +178,16 @@
       <h1 class='results-main-header' style='background-color:white;padding:1.5vw;
        margin-top:5vw;'>Your Results Are In!</h1>
 
+       <div id='results-score'>
+         <h3>Score - </h3>
+       </div>
+
       <div id='results-feedback1'>
         <h3 class='sub-header'>Privacy Zuckering</h3>
         <p class='indent sub-text'>This Dark Pattern, labeled after CEO of Facebook
-          Mark Zuckerberg, is described by it's observation of corporation's and
+          Mark Zuckerberg, is described by it's observation of corporations' and
           companies' potential desire to acquire user's private information. In order
-          to avoid this imagine that the internet is a stranger; if you wouldn't
+          to avoid this, imagine that the internet is a stranger; if you wouldn't
           tell a stranger the information don't tell the internet.</p>
       </div>
 
@@ -199,7 +203,7 @@
         <h3 class='sub-header'>Sneak Into Basket</h3>
         <p class='indent sub-text'>This particularly dangerous Dark Pattern attempts to
         steal user's money by hoping they'd not notice small details such as an
-        agreement to pay a fee for a feature that is automatically agreed upon.
+        automatically agreed upon agreement to pay an extra fee for a service or product.
         In this scenario you'd have to opt out of the agreement in order to avoid
         the fee, and many individuals neglect to meticulously check their checkout
         basket. In order to avoid this remeber to always ensure you're paying for
@@ -213,7 +217,8 @@
         the obvious next step is to stop paying for it, opt out, or delete the account.
         However, some websites make such simple tasks extremely difficult. This Dark
         Pattern tries to wear out users who can't figure it out and benefit off of their
-        inability to decipher their website's confusing interface.</p>
+        inability to decipher their website's confusing interface. Try to avoid this
+        by researching how to do the tasks you can't figure out.</p>
       </div>
 
       <div id='results-feedback5'>
@@ -229,8 +234,8 @@
       <div id='results-feedback6'>
         <h3 class='sub-header'>Forced Continuity</h3>
         <p class='indent sub-text'>Many applications use a subscription model now a days, and
-        offers a free trial to incentive users to potentially purchase it. However,
-        these free trials often require credit card information. If a user forgets
+        offers a free trial to incentive users to potentially purchase it in the future.
+        However, these free trials often require credit card information. If a user forgets
         to cancel their subscription they automatically get charged at the end of
         a free trial. This mischeivious Dark Pattern expects users to forget they
         signed up for a trial in a few weeks and take the subscription cost. In order
@@ -343,10 +348,12 @@
       }
       if (answer6 == q6BadAnswer) {
         // update result
-        $("#results-feedback6").html("Forced Continuity");
+        $("#results-feedback6").show();
         --score;
         console.log(score);
       }
+      $('#results-score').html(score,'/6')
+
 
       $("quiz-form").submit(function(e) {
         e.preventDefault();
