@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 .quiz-button:active{
-  background: gray;
+  background: green;
 }
 .second-button{
   text-align: center;
