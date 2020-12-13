@@ -275,30 +275,28 @@
 
       <div id='bad-summary'>
         <h3 class='bad-summary-title'>Summary</h3>
-        <p class='sub-text'style="margin-bottom:10vw;text-align:center">
-        The Dark Pattern(s) you fell victim to are tricks
-        designed to prey on and take advantage of your inexperience or lack of
-        knowledge with them or aspects of the internet. It's not your fault for
-        not realizing the intent behind some websites' actions, however it's up
-        to you to improve on your internet habits. Improving them will reduce
-        the potential damage manipulative websites can cause you, or your bank account.
-        Good luck!</p>
+        <p class='sub-text' style="margin-bottom:10vw;text-align:center">
+          The Dark Pattern(s) you fell victim to are tricks
+          designed to prey on and take advantage of your inexperience or lack of
+          knowledge with them or aspects of the internet. It's not your fault for
+          not realizing the intent behind some websites' actions, however it's up
+          to you to improve on your internet habits. Improving them will reduce
+          the potential damage manipulative websites can cause you, or your bank account.
+          Good luck!</p>
       </div>
 
       <div id='good-summary'>
         <p class='sub-text' style="margin-top:3vw;margin-bottom:10vw;text-align:center">
-        You seem to be very knowledgable about the internet and
-        the ways in which websites can try to manipulate and trick you. This is
-        extremely impressive considering companies are finding new, innovative, and
-        deceptive ways to steal user data and profit from their unawareness. I
-        reccomend that you maintain these good internet behaviors and continue
-        learning about Dark Patterns.</p>
+          You seem to be very knowledgable about the internet and
+          the ways in which websites can try to manipulate and trick you. This is
+          extremely impressive considering companies are finding new, innovative, and
+          deceptive ways to steal user data and profit from their unawareness. I
+          reccomend that you maintain these good internet behaviors and continue
+          learning about Dark Patterns.</p>
       </div>
 
       <div class='third-button'>
-        <button class='home-button'
-        onClick="window.location.reload();"
-        type='button'>GO BACK HOME</button>
+        <button class='home-button' onClick="window.location.reload();" type='button'>GO BACK HOME</button>
       </div>
 
     </div>
@@ -356,114 +354,116 @@
     var score = 6
 
     //switches from second to third page
-    $(".results-button").click(function() {
-      $("#Quiz-Page").hide();
-      $('#Results-Page').show();
-      $('#end-title').show();
-      console.log("checking answers...");
+    if ($('input[name="question1"]:checked').val() != undefined) {
+      $(".results-button").click(function() {
+        $("#Quiz-Page").hide();
+        $('#Results-Page').show();
+        $('#end-title').show();
+        console.log("checking answers...");
 
-      //gets values of all questions
-      var answer1 = $('input[name="question1"]:checked').val();
-      var answer2 = $('input[name="question2"]:checked').val();
-      var answer3 = $('input[name="question3"]:checked').val();
-      var answer4 = $('input[name="question4"]:checked').val();
-      var answer5 = $('input[name="question5"]:checked').val();
-      var answer6 = $('input[name="question6"]:checked').val();
-
-
-      console.log(answer1);
-      console.log(answer2);
-      console.log(answer3);
-      console.log(answer4);
-      console.log(answer5);
-      console.log(answer6);
-
-      // if incorrect show text
-      if (answer1 == q1BadAnswer) {
-        // update result
-        $('#results-feedback1').show();
-        --score;
-        console.log(score);
-
-      }
-      if (answer2 == q2BadAnswer) {
-        // update result
-        $("#results-feedback2").show();
-        --score;
-        console.log(score);
-      }
-      if (answer3 == q3BadAnswer) {
-        // update result
-        $("#results-feedback3").show();
-        --score;
-        console.log(score);
-      }
-      if (answer4 == q4BadAnswer) {
-        // update result
-        $("#results-feedback4").show();
-        --score;
-        console.log(score)
-      }
-      if (answer5 == q5BadAnswer) {
-        // update result
-        $("#results-feedback5").show();
-        --score;
-        console.log(score);
-      }
-      if (answer6 == q6BadAnswer) {
-        // update result
-        $("#results-feedback6").show();
-        --score;
-        console.log(score);
-      }
-      if (score === 6) {
-        $('#results-score-6').show();
-        $('#results-sub-title').hide();
-        $('#good-summary').show();
-        $('#bad-summary').hide();
-      }
-      if (score === 5) {
-        $('#results-score-5').show();
-        $('#results-congratulations').hide();
-        $('#good-summary').hide();
-        $('#bad-summary').show();
-      }
-      if (score === 4) {
-        $('#results-score-4').show();
-        $('#results-congratulations').hide();
-        $('#good-summary').hide();
-        $('#bad-summary').show();
-      }
-      if (score === 3) {
-        $('#results-score-3').show();
-        $('#results-congratulations').hide();
-        $('#good-summary').hide();
-        $('#bad-summary').show();
-      }
-      if (score === 2) {
-        $('#results-score-2').show();
-        $('#results-congratulations').hide();
-        $('#good-summary').hide();
-        $('#bad-summary').show();
-      }
-      if (score === 1) {
-        $('#results-score-1').show();
-        $('#results-congratulations').hide();
-        $('#good-summary').hide();
-        $('#bad-summary').show();
-      }
-      if (score === 0) {
-        $('#results-score-0').show();
-        $('#results-congratulations').hide();
-        $('#good-summary').hide();
-        $('#bad-summary').show();
-      }
+        //gets values of all questions
+        var answer1 = $('input[name="question1"]:checked').val();
+        var answer2 = $('input[name="question2"]:checked').val();
+        var answer3 = $('input[name="question3"]:checked').val();
+        var answer4 = $('input[name="question4"]:checked').val();
+        var answer5 = $('input[name="question5"]:checked').val();
+        var answer6 = $('input[name="question6"]:checked').val();
 
 
-      $("quiz-form").submit(function(e) {
-        e.preventDefault();
+        console.log(answer1);
+        console.log(answer2);
+        console.log(answer3);
+        console.log(answer4);
+        console.log(answer5);
+        console.log(answer6);
+
+        // if incorrect show text
+        if (answer1 == q1BadAnswer) {
+          // update result
+          $('#results-feedback1').show();
+          --score;
+          console.log(score);
+
+        }
+        if (answer2 == q2BadAnswer) {
+          // update result
+          $("#results-feedback2").show();
+          --score;
+          console.log(score);
+        }
+        if (answer3 == q3BadAnswer) {
+          // update result
+          $("#results-feedback3").show();
+          --score;
+          console.log(score);
+        }
+        if (answer4 == q4BadAnswer) {
+          // update result
+          $("#results-feedback4").show();
+          --score;
+          console.log(score)
+        }
+        if (answer5 == q5BadAnswer) {
+          // update result
+          $("#results-feedback5").show();
+          --score;
+          console.log(score);
+        }
+        if (answer6 == q6BadAnswer) {
+          // update result
+          $("#results-feedback6").show();
+          --score;
+          console.log(score);
+        }
+        if (score === 6) {
+          $('#results-score-6').show();
+          $('#results-sub-title').hide();
+          $('#good-summary').show();
+          $('#bad-summary').hide();
+        }
+        if (score === 5) {
+          $('#results-score-5').show();
+          $('#results-congratulations').hide();
+          $('#good-summary').hide();
+          $('#bad-summary').show();
+        }
+        if (score === 4) {
+          $('#results-score-4').show();
+          $('#results-congratulations').hide();
+          $('#good-summary').hide();
+          $('#bad-summary').show();
+        }
+        if (score === 3) {
+          $('#results-score-3').show();
+          $('#results-congratulations').hide();
+          $('#good-summary').hide();
+          $('#bad-summary').show();
+        }
+        if (score === 2) {
+          $('#results-score-2').show();
+          $('#results-congratulations').hide();
+          $('#good-summary').hide();
+          $('#bad-summary').show();
+        }
+        if (score === 1) {
+          $('#results-score-1').show();
+          $('#results-congratulations').hide();
+          $('#good-summary').hide();
+          $('#bad-summary').show();
+        }
+        if (score === 0) {
+          $('#results-score-0').show();
+          $('#results-congratulations').hide();
+          $('#good-summary').hide();
+          $('#bad-summary').show();
+        }
+
+
+        $("quiz-form").submit(function(e) {
+          e.preventDefault();
+        });
       });
-    });
+    }
   </script>
 
 
