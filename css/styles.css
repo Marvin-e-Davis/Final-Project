@@ -141,3 +141,9 @@
 #results-feedback6{
   display: none;
 }
+#results-score-6{
+  text-align: center;
+  background-color: green;
+  color: white;
+  border-radius: 10vw;
+}
