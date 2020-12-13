@@ -33,6 +33,9 @@
 .quiz-button{
   padding: 2vw 4vw;
   margin-top: 6vw;
+  color: white;
+  background-color: black;
+
 }
 #Quiz-Page{
   display: none;
