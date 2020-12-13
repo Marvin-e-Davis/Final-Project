@@ -191,7 +191,7 @@
   <script>
     //switches from first to second page
     $(document).ready(function() {
-      window.scrollTo(0,0);
+      $(this).scrollTop(0);
       $(".quiz-button").click(function() {
         $("#Home-Page").hide();
         $('#Quiz-Page').show();
