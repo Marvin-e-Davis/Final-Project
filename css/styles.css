@@ -7,7 +7,8 @@
   background-color: black;
   text-align: center;
   padding: 2vw;
-  margin: 0
+  margin: 0;
+  font-size: 2.5vw;
 }
 #end-title{
   color: black;
@@ -15,6 +16,14 @@
   text-align: center;
   padding: 1.5vw;
   display: none;
+  font-size: 2vw;
+}
+.bad-summary-title{
+  text-align:center;
+  margin-top:15vw;
+  margin-bottom:4.5vw;
+  text-decoration:underline;
+  font-size: 2.5vw;
 }
 .sub-header{
   font-size: 2.25vw;
