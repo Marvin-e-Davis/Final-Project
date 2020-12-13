@@ -33,6 +33,7 @@
 }
 .questions{
   font-size: 1.75vw;
+  margin-bottom: 10vw;
 }
 .radio-container{
   display: block;
