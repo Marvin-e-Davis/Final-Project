@@ -30,6 +30,9 @@
 .first-button{
   text-align: center;
 }
+.quiz-button{
+  padding: 2vw 4vw;
+}
 #Quiz-Page{
   display: none;
 }
