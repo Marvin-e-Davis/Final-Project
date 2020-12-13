@@ -27,6 +27,9 @@
   line-height: 4vw;
   margin-left: 2vw;
 }
+.second-button{
+  text-align: center;
+}
 #Quiz-Page{
   display: none;
 }
