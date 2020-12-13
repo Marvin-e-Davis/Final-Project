@@ -43,6 +43,9 @@
   background-color: black;
   border-radius: 10vw;
 }
+.results-button:active{
+  background: green;
+}
 .indent{
   margin-left: 2vw;
 }
