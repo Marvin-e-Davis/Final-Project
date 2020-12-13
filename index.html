@@ -68,7 +68,7 @@
 
           <div class='questions'>
             <li style='margin-top:7vw'>
-              <p>Do you make accounts for random websites and give away personal information?</p>
+              <p>Do you give away personal information on websites or applications?</p>
             </li>
             <label class='radio-container indent' for="q1-yes">Yes
               <input type="radio" id="q1-yes" name="question1" value="Yes">
@@ -83,7 +83,7 @@
 
           <div class='questions'>
             <li>
-              <p>Do you click on advertisements that promise free benefits with a download?</p>
+              <p>Do you click on advertisements that promise free things by downloading something?</p>
             </li>
             <label class='radio-container indent' for="q2-yes">Yes
               <input type="radio" id="q2-yes" name="question2" value="Yes">
@@ -98,7 +98,7 @@
 
           <div class='questions'>
             <li>
-              <p>Do you check your shopping cart before confirming a purchase?</p>
+              <p>Do you forget to check your shopping cart before confirming a purchase?</p>
             </li>
             <label class='radio-container indent' for="q3-yes">Yes
               <input type="radio" id="q3-yes" name="question3" value="Yes">
@@ -113,7 +113,7 @@
 
           <div class='questions'>
             <li>
-              <p>Do you read what you click on websites if you think you know the layout of the site?</p>
+              <p>Do you find it difficult to get out of subscriptions or delete accounts?</p>
             </li>
             <label class='radio-container indent' for="q4-yes">Yes
               <input type="radio" id="q4-yes" name="question4" value="Yes">
@@ -128,7 +128,8 @@
 
           <div class='questions'>
             <li>
-              <p>Do you sign up for subscriptions and forget if you're still paying for them?</p>
+              <p>Have you ever set out to accomplish one objective on a website
+                only to have a completely different, specifically bad, thing happen?</p>
             </li>
             <label class='radio-container indent' for="q5-yes">Yes
               <input type="radio" id="q5-yes" name="question5" value="Yes">
@@ -137,6 +138,22 @@
 
             <label class='radio-container indent' for="q5-no">No
               <input type="radio" id="q5-no" name="question5" value="No">
+              <span class='custom-button'></span>
+            </label><br>
+          </div>
+
+          <div class='questions'>
+            <li>
+              <p>Have you ever signed up for a free trial, forgot you did so,
+                and were silently charged a fee?</p>
+            </li>
+            <label class='radio-container indent' for="q6-yes">Yes
+              <input type="radio" id="q6-yes" name="question6" value="Yes">
+              <span class='custom-button'></span>
+            </label><br>
+
+            <label class='radio-container indent' for="q6-no">No
+              <input type="radio" id="q6-no" name="question6" value="No">
               <span class='custom-button'></span>
             </label><br>
           </div>
@@ -152,8 +169,12 @@
 
     <!-- Third page - Results page -->
     <div id='Results-Page'>
-      <h1 id='results-feedback1'></h1>
-      <h1 id='results-feedback2'></h1>
+      <p id='results-feedback1'></p>
+      <p id='results-feedback2'></p>
+      <p id='results-feedback3'></p>
+      <p id='results-feedback4'></p>
+      <p id='results-feedback5'></p>
+      <p id='results-feedback6'></p>
     </div>
 
   </div>
@@ -181,11 +202,12 @@
   </script>
 
   <script>
-    var q1BadAnswer = "No";
-    var q2BadAnswer = 'No';
-    var q3BadAnswer = 'No';
-    var q4BadAnswer = 'No';
-    var q5BadAnswer = 'No';
+    var q1BadAnswer = "Yes";
+    var q2BadAnswer = 'Yes';
+    var q3BadAnswer = 'Yes';
+    var q4BadAnswer = 'Yes';
+    var q5BadAnswer = 'Yes';
+    var q6BadAnswer = 'Yes'
 
     //switches from second to third page
     $(".results-button").click(function() {
@@ -199,6 +221,7 @@
       var answer3 = $('input[name="question3"]:checked').val();
       var answer4 = $('input[name="question4"]:checked').val();
       var answer5 = $('input[name="question5"]:checked').val();
+      var answer6 = $('input[name="question5"]:checked').val();
 
 
       console.log(answer1);
@@ -206,6 +229,7 @@
       console.log(answer3);
       console.log(answer4);
       console.log(answer5);
+      console.log(answer6);
 
       // if incorrect
       if (answer1 == q1BadAnswer) {
@@ -220,18 +244,23 @@
       }
       if (answer3 == q3BadAnswer) {
         // update result
-        $("#results-feedback").html("You are dumb!");
+        $("#results-feedback3").html("You are dumb!");
         console.log(3)
       }
       if (answer4 == q4BadAnswer) {
         // update result
-        $("#results-feedback").html("You are dumb!");
+        $("#results-feedback4").html("You are dumb!");
         console.log(4)
       }
       if (answer5 == q5BadAnswer) {
         // update result
-        $("#results-feedback").html("You are dumb!");
+        $("#results-feedback5").html("You are dumb!");
         console.log(5)
+      }
+      if (answer6 == q6BadAnswer) {
+        // update result
+        $("#results-feedback6").html("You are dumb!");
+        console.log(6)
       }
 
       $("quiz-form").submit(function(e) {
