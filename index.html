@@ -218,9 +218,25 @@
 
       <div id='results-feedback5'>
         <p>Bait and Switch</p>
-        <p class='indent'></p>
+        <p class='indent'>A Dark Pattern this deceptive is sure to trick a large
+        variety of users. Essentially, a Bait and Switch is when what you logically
+        believe what will happen is not what actually happens due to how the developers
+        designed a website or application. An easy example is Windows 10's, upgrade that
+        was installed even if you exited the prompt screen. While you expect something to not
+        happen if you click an X, in this case it happened anyways.</p>
       </div>
-      <p id='results-feedback6'></p>
+
+      <div id='results-feedback6'>
+        <p>Forced Continuity</p>
+        <p class='indent'>Many applications use a subscription model now a days, and
+        offers a free trial to incentive users to potentially purchase it. However,
+        these free trials often require credit card information. If a user forgets
+        to cancel their subscription they automatically get charged at the end of
+        a free trial. This mischeivious Dark Pattern expects users to forget they
+        signed up for a trial in a few weeks and take the subscription cost. In order
+        to avoid this mishap, write down when your free trial ends and set several
+        reminders to cancel before your credit card gets charged.</p>
+      </div>
 
     </div>
   </div>
@@ -268,7 +284,8 @@
     var q3BadAnswer = 'Yes';
     var q4BadAnswer = 'Yes';
     var q5BadAnswer = 'Yes';
-    var q6BadAnswer = 'Yes'
+    var q6BadAnswer = 'Yes';
+    var score = 6
 
     //switches from second to third page
     $(".results-button").click(function() {
@@ -296,32 +313,39 @@
       if (answer1 == q1BadAnswer) {
         // update result
         $('#results-feedback1').show();
-        console.log(1)
+        --score;
+        console.log(score);
+
       }
       if (answer2 == q2BadAnswer) {
         // update result
         $("#results-feedback2").show();
-        console.log(2)
+        --score;
+        console.log(score);
       }
       if (answer3 == q3BadAnswer) {
         // update result
         $("#results-feedback3").show();
-        console.log(3)
+        --score;
+        console.log(score);
       }
       if (answer4 == q4BadAnswer) {
         // update result
         $("#results-feedback4").show();
-        console.log(4)
+        --score;
+        console.log(score)
       }
       if (answer5 == q5BadAnswer) {
         // update result
-        $("#results-feedback5").html("Bait and Switch");
-        console.log(5)
+        $("#results-feedback5").show();
+        --score;
+        console.log(score);
       }
       if (answer6 == q6BadAnswer) {
         // update result
         $("#results-feedback6").html("Forced Continuity");
-        console.log(6)
+        --score;
+        console.log(score);
       }
 
       $("quiz-form").submit(function(e) {
