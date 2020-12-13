@@ -354,22 +354,22 @@
     var score = 6
 
     //makes user click all questions
-    if (
-      ($('input[name="question1"]:checked').val() == undefined &&
-        $('input[name="question2"]:checked').val() == undefined)
+    $('.resultsbutton').click(function(){
+      if (
+        ($('input[name="question1"]:checked').val() === undefined &&
+          $('input[name="question2"]:checked').val() === undefined)
 
-      &&
-      ($('input[name="question3"]:checked').val() == undefined &&
-        $('input[name="question4"]:checked').val() == undefined)
+        &&
+        ($('input[name="question3"]:checked').val() === undefined &&
+          $('input[name="question4"]:checked').val() === undefined)
 
-      &&
-      ($('input[name="question5"]:checked').val() == undefined &&
-        $('input[name="question6"]:checked').val() == undefined)) {
-          console.log(1);
-        }else{
+        &&
+        ($('input[name="question5"]:checked').val() === undefined &&
+          $('input[name="question6"]:checked').val() === undefined)) {
+        console.log(1);
+      } else {
 
-      //switches from second to third page
-      $(".results-button").click(function() {
+        //switches from second to third page
         $("#Quiz-Page").hide();
         $('#Results-Page').show();
         $('#end-title').show();
@@ -477,7 +477,7 @@
           e.preventDefault();
         });
       });
-    };
+    });
   </script>
 
 
