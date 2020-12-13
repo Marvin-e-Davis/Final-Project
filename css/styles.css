@@ -278,4 +278,13 @@
     font-size: 3vw;
     line-height: 6.5vw;
   }
+  .quiz-button{
+    padding: 10% 15%;
+    margin-top: 2vw;
+    margin-bottom: 6vw;
+    color: white;
+    background-color: black;
+    border-radius: 10vw;
+    cursor: pointer;
+  }
 }
