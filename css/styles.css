@@ -19,6 +19,9 @@
   margin-bottom: 1.5vw;
   text-align: center;
 }
+.results-background{
+  background-color: white;
+}
 .sub-text{
   font-size: 1.75vw;
   line-height: 4vw;
