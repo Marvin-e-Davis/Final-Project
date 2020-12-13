@@ -46,7 +46,7 @@
   -ms-user-select: none;
   user-select: none;
 }
-.container input {
+.radio-container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
