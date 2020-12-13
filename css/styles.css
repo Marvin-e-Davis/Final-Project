@@ -31,11 +31,10 @@
   text-align: center;
 }
 .quiz-button{
-  padding: 2vw 4vw;
+  padding: 2vw 10vw;
   margin-top: 6vw;
   color: white;
   background-color: black;
-
 }
 #Quiz-Page{
   display: none;
