@@ -273,6 +273,25 @@
           reminders to cancel before your credit card gets charged.</p>
       </div>
 
+      <div id='bad-summary'>
+        <p class='sub-text'>The Dark Pattern(s) you fell victim to are tricks
+        designed to prey on and take advantage of your inexperience or lack of
+        knowledge with them or aspects of the internet. It's not your fault for
+        not realizing the intent behind some websites' actions, however it's up
+        to you to improve on your internet habits. Improving them will reduce
+        the potential damage manipulative websites can cause you, or your bank account.
+        Good luck!</p>
+      </div>
+
+      <div id='good-summary'>
+        <p class='sub-text'>You seem to be very knowledgable about the internet and
+        the ways in which websites can try to manipulate and trick you. This is
+        extremely impressive considering companies are finding new, innovative, and
+        deceptive ways to steal user data and profit from their unawareness. I
+        reccomend that you maintain these good internet behaviors and continue
+        learning about Dark Patterns.</p>
+      </div>
+
     </div>
   </div>
   <!-- JS -->
@@ -386,34 +405,45 @@
       if (score === 6) {
         $('#results-score-6').show();
         $('#results-sub-title').hide();
+        $('#good-summary').show();
+        $('#bad-summary').hide();
       }
       if (score === 5) {
         $('#results-score-5').show();
         $('#results-sub-title-2').hide();
+        $('#good-summary').hide();
+        $('#bad-summary').show();
       }
       if (score === 4) {
         $('#results-score-4').show();
         $('#results-sub-title-2').hide();
+        $('#good-summary').hide();
+        $('#bad-summary').show();
       }
       if (score === 3) {
         $('#results-score-3').show();
         $('#results-sub-title-2').hide();
+        $('#good-summary').hide();
+        $('#bad-summary').show();
       }
       if (score === 2) {
         $('#results-score-2').show();
         $('#results-sub-title-2').hide();
+        $('#good-summary').hide();
+        $('#bad-summary').show();
       }
       if (score === 1) {
         $('#results-score-1').show();
         $('#results-sub-title-2').hide();
+        $('#good-summary').hide();
+        $('#bad-summary').show();
       }
       if (score === 0) {
         $('#results-score-0').show();
         $('#results-sub-title-2').hide();
+        $('#good-summary').hide();
+        $('#bad-summary').show();
       }
-
-
-
 
 
       $("quiz-form").submit(function(e) {
