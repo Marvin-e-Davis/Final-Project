@@ -28,6 +28,17 @@
   background-color: black;
   border-radius: 10vw;
 }
+.second-button{
+  text-align: center;
+}
+.results-button{
+  padding: 2vw 7vw;
+  margin-top: 2vw;
+  margin-bottom: 6vw;
+  color: white;
+  background-color: black;
+  border-radius: 10vw;
+}
 .indent{
   margin-left: 2vw;
 }
