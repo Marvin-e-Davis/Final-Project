@@ -165,7 +165,7 @@
 }
 #results-score-4{
   text-align: center;
-  background-color: yellow;
+  background-color: #cccc00;
   color: white;
   border-radius: 50%;
   padding: 6vw;
@@ -176,7 +176,7 @@
 }
 #results-score-3{
   text-align: center;
-  background-color: yellow;
+  background-color: #cccc00;
   color: white;
   border-radius: 50%;
   padding: 6vw;
