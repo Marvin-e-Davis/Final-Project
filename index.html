@@ -21,7 +21,7 @@
 
 <body class='main-background'>
   <h1 class='main-title'>The Dark Patterns Quiz</h1>
-  <h2 id='end-title'>Results</h2>
+  <h2 id='end-title'>Your Results Are In!</h2>
 
   <div class='container'>
     <!-- First page - home page -->
@@ -176,9 +176,6 @@
     <!-- Third page - Results page -->
     <div id='Results-Page'>
 
-      <h1 class='results-main-header' style='background-color:white;padding:1.65vw;
-       margin-top:5vw;'>Your Results Are In!</h1>
-
       <div id='results-score-6'>
         <h3>Score - 6/6 </h3>
       </div>
@@ -325,6 +322,7 @@
     $(".results-button").click(function() {
       $("#Quiz-Page").hide();
       $('#Results-Page').show();
+      $('#end-title').show();
       console.log("checking answers...");
 
       //gets values of all questions
