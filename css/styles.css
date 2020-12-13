@@ -84,7 +84,7 @@
 
 /* Style the indicator (dot/circle) */
 .radio-container .custom-button:after {
-  top: 10vw;
+  top: 9px;
   left: 9px;
   width: 8px;
   height: 8px;
