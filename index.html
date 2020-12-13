@@ -178,8 +178,8 @@
       <h1 class='results-main-header' style='background-color:white;padding:1.5vw;
        margin-top:5vw;'>Your Results Are In!</h1>
 
-       <div id='results-score'>
-         <h3>Score - </h3>
+       <div id='results-score-6'>
+         <h3>Score - 6/6 </h3>
        </div>
 
       <div id='results-feedback1'>
@@ -314,7 +314,7 @@
       console.log(answer5);
       console.log(answer6);
 
-      // if incorrect
+      // if incorrect show text
       if (answer1 == q1BadAnswer) {
         // update result
         $('#results-feedback1').show();
@@ -352,7 +352,9 @@
         --score;
         console.log(score);
       }
-      $('#results-score').html(score + '/6')
+
+
+
 
 
       $("quiz-form").submit(function(e) {
