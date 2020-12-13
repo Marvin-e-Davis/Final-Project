@@ -295,6 +295,10 @@
         learning about Dark Patterns.</p>
       </div>
 
+      <div class='third-button'>
+        <button class='home-button' type='button'>GO BACK HOME</button>
+      </div>
+
     </div>
   </div>
   <!-- JS -->
@@ -324,12 +328,17 @@
     //Has buttons scroll to top when clicked
     const quizButton = document.querySelector('.quiz-button')
     const resultsButton = document.querySelector('.results-button')
+    const homeButton = document.querySelector('.home-button')
 
     quizButton.addEventListener('click', function() {
       window.scrollTo(0, 0);
     });
 
     resultsButton.addEventListener('click', function() {
+      window.scrollTo(0, 0);
+    });
+
+    homeButton.addEventListener('click', function() {
       window.scrollTo(0, 0);
     });
   </script>
@@ -453,6 +462,14 @@
         e.preventDefault();
       });
     });
+  </script>
+
+  <script>
+    $('.home-button').click(function(){
+      $('#Results-Page').hide();
+      $('#Home-Page').show();
+      $('#end-title').hide()
+    })
   </script>
 
 </body>

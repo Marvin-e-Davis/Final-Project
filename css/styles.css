@@ -63,6 +63,18 @@
 .results-button:active{
   background: green;
 }
+.home-button{
+  padding: 2vw 7vw;
+  margin-top: 2vw;
+  margin-bottom: 6vw;
+  color: white;
+  background-color: black;
+  border-radius: 10vw;
+  cursor: pointer;
+}
+.home-button:active{
+  background: green;
+}
 .indent{
   margin-left: 2vw;
 }
