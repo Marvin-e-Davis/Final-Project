@@ -359,16 +359,16 @@
     color: white;
     background-color: black;
     text-align: center;
-    padding: 3vw;
+    padding: 3.25vw;
     margin: 0;
-    font-size: 3vw;
+    font-size: 3.25vw;
   }
   .sub-header{
-    font-size: 2.5vw;
+    font-size: 2.75vw;
     margin-top: 10vw;
   }
   .sub-text{
-    font-size: 2vw;
+    font-size: 2.25vw;
     line-height: 4.5vw;
   }
   ol{
