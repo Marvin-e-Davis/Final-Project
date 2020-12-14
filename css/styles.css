@@ -264,20 +264,7 @@
 @media screen and (max-width: 250px){
   ol{
     margin-left: 1vw;
-    padding: 4vw;
-  }
-  .first-button{
-    padding: 0;
-  }
-  .quiz-button{
-    padding: 2% 7%;
-    font-size: 1%;
-    margin-top: 2vw;
-    margin-bottom: 10vw;
-    color: white;
-    background-color: black;
-    border-radius: 10vw;
-    cursor: pointer;
+    padding: 6vw;
   }
 }
 
