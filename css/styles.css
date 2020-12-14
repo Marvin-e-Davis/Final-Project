@@ -266,14 +266,17 @@
     margin-left: 1vw;
     padding: 4vw;
   }
-  .quiz-button{
+  .first-button{
     padding: 0;
-    font-size: 0;
+  }
+  .quiz-button{
+    padding: 2% 7%;
+    font-size: 1%;
     margin-top: 2vw;
     margin-bottom: 10vw;
     color: white;
     background-color: black;
-    border-radius: 0vw;
+    border-radius: 10vw;
     cursor: pointer;
   }
 }
