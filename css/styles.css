@@ -381,3 +381,9 @@
     margin-top: 8vw;
   }
 }
+
+@media screen and (min-width: 50px){
+  .quiz-button{
+    padding: 2.5vw 4vw;
+    font-size: 60%;
+  }
