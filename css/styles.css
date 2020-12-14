@@ -347,3 +347,32 @@
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: 800px){
+  .main-title{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 5vw;
+    margin: 0;
+    font-size: 5vw;
+  }
+  .sub-header{
+    font-size: 4vw;
+    margin-top: 10vw;
+  }
+  .sub-text{
+    font-size: 3.5vw;
+    line-height: 6.5vw;
+  }
+  .quiz-button{
+    padding: 4% 7%;
+    font-size: 85%;
+    margin-top: 2vw;
+    margin-bottom: 10vw;
+    color: white;
+    background-color: black;
+    border-radius: 10vw;
+    cursor: pointer;
+  }
+}
