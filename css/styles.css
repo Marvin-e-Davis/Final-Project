@@ -79,7 +79,7 @@
   background: green;
 }
 .indent{
-  margin-left: 0;
+  margin-left: 2vw;
 }
 .questions{
   font-size: 1.75vw;
@@ -262,7 +262,7 @@
 
 /*Media Queries*/
 @media screen and (max-width: 250px){
-  ol.indent{
+  li{
     margin-left: 0;
   }
   .quiz-button{
