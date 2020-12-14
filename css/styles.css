@@ -261,6 +261,133 @@
 }
 
 /*Media Queries*/
-@media screen and (min-width: 100px){
-
+@media screen and (max-width: 600px){
+  .main-title{
+    padding: 3vw;
+    margin: 0;
+    font-size: 3.5vw;
+  }
+  #end-title{
+    padding: 1.5vw;
+    display: none;
+    font-size: 2vw;
+  }
+  .bad-summary-title{
+    margin-top:15vw;
+    margin-bottom:4.5vw;
+    font-size: 2.5vw;
+  }
+  .sub-header{
+    font-size: 2.25vw;
+    margin-top: 4vw;
+    margin-bottom: 1.5vw;
+  }
+  .sub-text{
+    font-size: 1.75vw;
+    line-height: 4vw;
+  }
+  .first-button{
+    text-align: center;
+  }
+  .quiz-button{
+    padding: 2vw 7vw;
+    margin-top: 2vw;
+    margin-bottom: 6vw;
+    border-radius: 10vw;
+  }
+  .results-button{
+    padding: 2vw 7vw;
+    margin-top: 2vw;
+    margin-bottom: 6vw;
+    border-radius: 10vw;
+  }
+  .home-button{
+    padding: 2vw 7vw;
+    margin-top: 2vw;
+    margin-bottom: 6vw;
+    border-radius: 10vw;
+    cursor: pointer;
+  }
+  .questions{
+    font-size: 1.75vw;
+    margin-bottom: 1vw;
+    font-weight: 500;
+  }
+  .radio-container{
+    padding-left: 3vw;
+  }
+  .custom-button{
+    height: 2vw;
+    width: 2vw;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  /* Style the indicator (dot/circle) */
+  .radio-container .custom-button:after {
+    top: .7vw;
+    left: .7vw;
+    width: .6vw;
+    height: .6vw;
+    border-radius: 50%;
+    background: white;
+  }
+  #results-score-6{
+    border-radius: 50%;
+    padding: 6vw;
+    margin-top: 8vw;
+    margin-left: 33vw;
+    margin-right: 33vw;
+  }
+  #results-score-5{
+    border-radius: 50%;
+    padding: 6vw;
+    margin-top: 8vw;
+    margin-left: 33vw;
+    margin-right: 33vw;
+  }
+  #results-score-4{
+    border-radius: 50%;
+    padding: 6vw;
+    margin-top: 8vw;
+    margin-left: 33vw;
+    margin-right: 33vw;
+  }
+  #results-score-3{
+    border-radius: 50%;
+    padding: 6vw;
+    margin-top: 8vw;
+    margin-left: 33vw;
+    margin-right: 33vw;
+    display: none;
+  }
+  #results-score-2{
+    border-radius: 50%;
+    padding: 6vw;
+    margin-top: 8vw;
+    margin-left: 33vw;
+    margin-right: 33vw;
+  }
+  #results-score-1{
+    border-radius: 50%;
+    padding: 6vw;
+    margin-top: 8vw;
+    margin-left: 33vw;
+    margin-right: 33vw;
+  }
+  #results-score-0{
+    border-radius: 50%;
+    padding: 6vw;
+    margin-top: 8vw;
+    margin-left: 33vw;
+    margin-right: 33vw;
+  }
+  #results-sub-title{
+    font-size: 2.25vw;
+    margin-top: 8vw;
+    margin-bottom: 10vw;
+  }
+  #results-congratulations{
+    font-size: 2.25vw;
+    margin-top: 8vw;
+  }
 }
