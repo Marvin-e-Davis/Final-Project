@@ -264,23 +264,17 @@
 @media screen and (max-width: 850px){
   .main-title{
     padding: 3vw;
-    margin: 0;
     font-size: 3.5vw;
   }
   #end-title{
     padding: 2.5vw;
-    display: none;
     font-size: 3vw;
   }
   .bad-summary-title{
-    margin-top:15vw;
-    margin-bottom:4.5vw;
     font-size: 5vw;
   }
   .sub-header{
     font-size: 3.5vw;
-    margin-top: 4vw;
-    margin-bottom: 1.5vw;
   }
   .sub-text{
     font-size: 1.75vw;
