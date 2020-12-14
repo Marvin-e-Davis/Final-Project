@@ -286,20 +286,15 @@
     font-size: 60%;
   }
   .results-button{
-    padding: 2vw 7vw;
-    margin-top: 2vw;
-    margin-bottom: 6vw;
-    border-radius: 10vw;
+    padding: 2.5vw 4vw;
+    font-size: 60%;
   }
   .home-button{
-    padding: 2vw 7vw;
-    margin-top: 2vw;
-    margin-bottom: 6vw;
-    border-radius: 10vw;
-    cursor: pointer;
+    padding: 2.5vw 4vw;
+    font-size: 60%;
   }
   .questions{
-    font-size: 1.75vw;
+    font-size: 2.3vw;
     margin-bottom: 1vw;
     font-weight: 500;
   }
@@ -387,8 +382,24 @@
     padding: 2.5vw 4vw;
     font-size: 70%;
   }
+  .results-button{
+    padding: 2.5vw 4vw;
+    font-size: 70%;
+  }
+  .home-button{
+    padding: 2.5vw 4vw;
+    font-size: 70%;
+  }
   @media screen and (min-width: 500px){
     .quiz-button{
+      padding: 2.5vw 4vw;
+      font-size: 120%;
+    }
+    .results-button{
+      padding: 2.5vw 4vw;
+      font-size: 120%;
+    }
+    .home-button{
       padding: 2.5vw 4vw;
       font-size: 120%;
     }
