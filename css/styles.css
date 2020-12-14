@@ -371,4 +371,7 @@
     font-size: 3.5vw;
     line-height: 6.5vw;
   }
+  ol{
+    padding-left: 25vw;
+  }
 }
