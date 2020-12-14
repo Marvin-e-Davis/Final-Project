@@ -424,13 +424,10 @@
 
   #results-sub-title h2 {
     font-size: 3vw;
-    margin-top: 8vw;
-    margin-bottom: 10vw;
   }
 
-  #results-congratulations {
-    font-size: 2.25vw;
-    margin-top: 8vw;
+  #results-congratulations h2 {
+    font-size: 3vw;
   }
 }
 
