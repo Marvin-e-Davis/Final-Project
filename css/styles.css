@@ -266,9 +266,6 @@
     margin-left: 1vw;
     padding-left: 13vw;
   }
-  button{
-    padding: 0; 
-  }
 }
 
 @media screen and (max-width: 300px){
@@ -374,15 +371,5 @@
   .sub-text{
     font-size: 3.5vw;
     line-height: 6.5vw;
-  }
-  .quiz-button{
-    padding: 4% 7%;
-    font-size: 100%;
-    margin-top: 2vw;
-    margin-bottom: 10vw;
-    color: white;
-    background-color: black;
-    border-radius: 10vw;
-    cursor: pointer;
   }
 }
