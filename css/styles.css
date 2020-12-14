@@ -268,12 +268,12 @@
   }
   .quiz-button{
     padding: 0;
-    font-size: 1%;
+    font-size: 0;
     margin-top: 2vw;
     margin-bottom: 10vw;
     color: white;
     background-color: black;
-    border-radius: 10vw;
+    border-radius: 0vw;
     cursor: pointer;
   }
 }
