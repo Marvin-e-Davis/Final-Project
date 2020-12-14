@@ -264,7 +264,7 @@
 @media screen and (max-width: 250px){
   ol{
     margin-left: 1vw;
-    padding: 1vw;
+    padding: 2vw;
   }
   .quiz-button{
     padding: 4% 7%;
