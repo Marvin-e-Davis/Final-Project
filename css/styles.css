@@ -385,10 +385,10 @@
 @media screen and (min-width: 50px){
   .quiz-button{
     padding: 2.5vw 4vw;
-    font-size: 85%;
+    font-size: 70%;
   }
   @media screen and (min-width: 500px){
     .quiz-button{
       padding: 2.5vw 4vw;
-      font-size: 100%;
+      font-size: 120%;
     }
