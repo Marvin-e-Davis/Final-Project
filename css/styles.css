@@ -262,8 +262,11 @@
 
 /*Media Queries*/
 @media screen and (max-width: 250px){
+  ol{
+    margin: 0
+  }
   li{
-    margin-left: 0;
+    margin: 0;
   }
   .quiz-button{
     padding: 4% 7%;
