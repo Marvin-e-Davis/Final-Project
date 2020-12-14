@@ -261,6 +261,38 @@
 }
 
 /*Media Queries*/
+@media screen and (max-width: 250px){
+  .main-title{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 4vw;
+    margin: 0;
+    font-size: 4vw;
+  }
+  .sub-header{
+    font-size: 3.5vw;
+    margin-top: 10vw;
+  }
+  .sub-text{
+    font-size: 3vw;
+    line-height: 6.5vw;
+  }
+  .indent{
+    margin-left: 0;
+  }
+  .quiz-button{
+    padding: 4% 7%;
+    font-size: 5%;
+    margin-top: 2vw;
+    margin-bottom: 10vw;
+    color: white;
+    background-color: black;
+    border-radius: 10vw;
+    cursor: pointer;
+  }
+}
+
 @media screen and (max-width: 300px){
   .main-title{
     color: white;
