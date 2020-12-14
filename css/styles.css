@@ -403,6 +403,8 @@
       padding: 2.5vw 4vw;
       font-size: 120%;
     }
+  }
+  @media screen and (max-width: 500px){
     .questions{
       font-size: 2.7vw;
       margin-bottom: 1vw;
